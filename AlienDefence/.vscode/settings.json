@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "c:\\Users\\Notebook\\source\\repos\\LF05\\mysql-connector-java-5.1.42-bin.jar"
+        ],
+        "exclude": [
+            "c:\\Users\\Notebook\\source\\repos\\LF05\\AlienDefenceMaterialienFürSchülerInnen\\AlienDefenceMaterialienFürSchülerInnen\\01 Lernsituation AlienDefence\\mysql-connector-java-5.1.42-bin.jar"
+        ]
+    }
+}
