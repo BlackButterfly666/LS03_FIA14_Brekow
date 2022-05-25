@@ -1,8 +1,8 @@
 package controller;
 
 import model.Level;
+import model.User;
 import model.persistence.IPersistence;
-import toDo.User;
 
 public class AlienDefenceController {
 	

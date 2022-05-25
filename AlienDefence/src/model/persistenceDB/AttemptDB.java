@@ -13,8 +13,8 @@ import java.util.Vector;
 
 import model.Attempt;
 import model.Level;
+import model.User;
 import model.persistence.IAttemptPersistence;
-import toDo.User;
 
 public class AttemptDB implements IAttemptPersistence {
 
@@ -103,8 +103,8 @@ public class AttemptDB implements IAttemptPersistence {
 
 				nummerierung++;
 
-				//Markierung des Spielers für Highscoreansicht
-				//TODO Verstoß gegen 3 Schichtenarchitektur beheben
+				//Markierung des Spielers fï¿½r Highscoreansicht
+				//TODO Verstoï¿½ gegen 3 Schichtenarchitektur beheben
 				if (results.getInt("P_attempt_id") == gameId)
 					this.playerPosition = nummerierung - 1;
 
@@ -126,7 +126,7 @@ public class AttemptDB implements IAttemptPersistence {
 		return vecTests;
 	}
 
-	// löscht alle Einträge
+	// lï¿½scht alle Eintrï¿½ge
 	public void deleteHighscore(int level_id) {
 
 		String url = dbAccess.getFullURL();

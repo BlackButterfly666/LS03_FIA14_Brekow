@@ -1,5 +1,6 @@
-package toDo;
+package controller;
 
+import model.User;
 import model.persistence.IUserPersistence;
 
 /**
@@ -20,7 +21,7 @@ public class UserController {
 	}
 	
 	/**
-	 * liest einen User aus der Persistenzschicht und gibt das Userobjekt zurück
+	 * liest einen User aus der Persistenzschicht und gibt das Userobjekt zurï¿½ck
 	 * @param username eindeutige Loginname
 	 * @param passwort das richtige Passwort
 	 * @return Userobjekt, null wenn der User nicht existiert

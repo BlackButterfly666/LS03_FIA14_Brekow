@@ -24,8 +24,8 @@ import javax.swing.border.EmptyBorder;
 import controller.AlienDefenceController;
 import controller.GameController;
 import model.Level;
+import model.User;
 import model.persistenceDB.PersistenceDB;
-import toDo.User;
 import view.game.GameGUI;
 
 public class MainMenue extends JFrame {
@@ -56,7 +56,7 @@ public class MainMenue extends JFrame {
 		contentPane.setLayout(new BorderLayout());
 		setContentPane(contentPane);
 
-		// Überschrift
+		// ï¿½berschrift
 		JLabel lblHeadline = new JLabel("ALIEN DEFENCE");
 		lblHeadline.setHorizontalAlignment(SwingConstants.CENTER);
 		lblHeadline.setForeground(new Color(124, 252, 0));
@@ -180,10 +180,10 @@ public class MainMenue extends JFrame {
 	
 	public void btnSpielen_Clicked(AlienDefenceController alienDefenceController, List<Level> arrLevel) {
 		// User aus Datenbank holen
-		//TODO Böser Verstoß gegen MVC - hier muss später nochmal nachgebessert werden
+		//TODO Bï¿½ser Verstoï¿½ gegen MVC - hier muss spï¿½ter nochmal nachgebessert werden
 		User user = new PersistenceDB().getUserPersistance().readUser(tfdLogin.getText());
 
-		// Spielstarten, wenn Nutzer existiert und Passwort übereinstimmt
+		// Spielstarten, wenn Nutzer existiert und Passwort ï¿½bereinstimmt
 		if (user != null && user.getPassword().equals(new String(pfdPassword.getPassword()))) {
 
 			Thread t = new Thread("GameThread") {

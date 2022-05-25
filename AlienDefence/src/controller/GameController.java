@@ -6,7 +6,7 @@ import java.util.List;
 import model.Level;
 import model.Point;
 import model.Target;
-import toDo.User;
+import model.User;
 import view.menue.Highscore;
 
 public class GameController {
@@ -45,11 +45,11 @@ public class GameController {
 
 			if ((this.timeleft() <= 0 || this.isHasWon()) && this.setHighscore) {
 
-				setHighscore = false; //damit keine doppelten Einträge erzeugt werden
+				setHighscore = false; //damit keine doppelten Eintrï¿½ge erzeugt werden
 
 				// TODO Highscoreeintrag erzeugen Highscore >> F_user_id, F_level_id, shots,
 				// hits, reaction_time
-				System.out.println("Highscoreeintrag für " + currentLevel.getName() + ": " + currentUser.getFirst_name()
+				System.out.println("Highscoreeintrag fï¿½r " + currentLevel.getName() + ": " + currentUser.getFirst_name()
 						+ " hat " + this.getShotsFired() + " mal auf " + this.getTargets().size()
 						+ " Ziele gefeuert und " + this.getHits() + " mal getroffen.");
 				System.out.println("Highscorepunkte: " + alienDefenceController.getAttemptController().calculatePoints(this.currentLevel, this.hitCounter));

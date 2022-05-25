@@ -5,7 +5,6 @@ import model.persistence.ILevelPersistence;
 import model.persistence.IPersistence;
 import model.persistence.ITargetPersistence;
 import model.persistence.IUserPersistence;
-import toDo.UserDB;
 
 public class PersistenceDB implements IPersistence{
 

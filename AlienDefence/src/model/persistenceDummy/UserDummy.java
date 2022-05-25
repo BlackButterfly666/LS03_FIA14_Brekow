@@ -2,8 +2,8 @@ package model.persistenceDummy;
 
 import java.time.LocalDate;
 
+import model.User;
 import model.persistence.IUserPersistence;
-import toDo.User;
 
 /**
  * Dummyklasse zum Testen
